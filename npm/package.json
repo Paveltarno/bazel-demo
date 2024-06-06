@@ -1,0 +1,7 @@
+{
+  "name": "npm-workspace",
+  "workspaces": [
+    "packages/my_binary",
+    "packages/my_library"
+  ]
+}
