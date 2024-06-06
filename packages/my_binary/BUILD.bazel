@@ -1,0 +1,11 @@
+load("@aspect_rules_js//js:defs.bzl", "js_binary")
+
+js_binary(
+    name = "my_binary",
+    # Reference the location where the acorn npm module was linked in the root Bazel package
+    entry_point = "index.js",
+    data = [
+        "//packages/my_library:my_library"
+    ],
+    visibility = ["//visibility:public"],
+)
